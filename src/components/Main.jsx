@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import AppBar from "./AppBar";
 import RepositoryList from "./RepositoryList";
 
@@ -17,7 +17,6 @@ const Main = () => {
   return (
     <View style={styles.container}>
       <AppBar />
-      <Text>Rate Repository App</Text>
       <RepositoryList />
     </View>
   );
