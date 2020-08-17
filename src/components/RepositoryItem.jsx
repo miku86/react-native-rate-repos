@@ -27,10 +27,10 @@ const RepositoryItem = ({
       <Text>Full Name: {fullName}</Text>
       <Text>Description: {description}</Text>
       <Text>Language: {language}</Text>
-      <Text>Forks: {forksCount}</Text>
-      <Text>Stars: {stargazersCount}</Text>
-      <Text>Ratings: {ratingAverage}</Text>
-      <Text>Reviews: {reviewCount}</Text>
+      <Text>Forks: {formatNumbers(forksCount)}</Text>
+      <Text>Stars: {formatNumbers(stargazersCount)}</Text>
+      <Text>Ratings: {formatNumbers(ratingAverage)}</Text>
+      <Text>Reviews: {formatNumbers(reviewCount)}</Text>
     </View>
   );
 };
