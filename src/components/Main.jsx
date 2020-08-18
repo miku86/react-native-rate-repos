@@ -1,5 +1,6 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, Switch, View } from "react-native";
+import { Redirect, Route } from "react-router-native";
 import AppBar from "./AppBar";
 import RepositoryList from "./RepositoryList";
 
@@ -9,7 +10,7 @@ const styles = StyleSheet.create({
     flexShrink: 1,
     display: "flex",
     flexDirection: "column",
-    width: "100%"
+    width: "100%",
   },
 });
 
@@ -17,7 +18,12 @@ const Main = () => {
   return (
     <View style={styles.container}>
       <AppBar />
-      <RepositoryList />
+      <Switch>
+        <Route path="/" exact>
+          <RepositoryList />
+        </Route>
+        <Redirect to="/" />
+      </Switch>
     </View>
   );
 };
