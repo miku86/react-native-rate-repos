@@ -9,14 +9,20 @@ const styles = StyleSheet.create({
     fontFamily: theme.fonts.main,
     fontWeight: theme.fontWeights.normal,
   },
-  colorTextSecondary: {
-    color: theme.colors.textSecondary,
-  },
   colorPrimary: {
     color: theme.colors.primary,
   },
   colorSecondary: {
     color: theme.colors.secondary,
+  },
+  fontSizeSmall: {
+    fontSize: theme.fontSizes.small,
+  },
+  fontSizeMedium: {
+    fontSize: theme.fontSizes.medium,
+  },
+  fontSizeLarge: {
+    fontSize: theme.fontSizes.large,
   },
   fontSizeSubheading: {
     fontSize: theme.fontSizes.subheading,
@@ -29,9 +35,11 @@ const styles = StyleSheet.create({
 const CustomText = ({ color, fontSize, fontWeight, style, ...props }) => {
   const textStyle = [
     styles.text,
-    color === "textSecondary" && styles.colorTextSecondary,
     color === "primary" && styles.colorPrimary,
     color === "secondary" && styles.colorSecondary,
+    fontSize === "small" && styles.fontSizeSmall,
+    fontSize === "medium" && styles.fontSizeMedium,
+    fontSize === "large" && styles.fontSizeLarge,
     fontSize === "subheading" && styles.fontSizeSubheading,
     fontWeight === "bold" && styles.fontWeightBold,
     style,

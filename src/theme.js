@@ -8,6 +8,9 @@ const theme = {
     gray: "#333",
   },
   fontSizes: {
+    large: "1.5rem",
+    medium: "1.125rem",
+    small: "0.875rem",
     body: 14,
     subheading: 16,
   },
