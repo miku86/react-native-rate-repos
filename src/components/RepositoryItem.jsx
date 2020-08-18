@@ -28,11 +28,13 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "flex-start",
     marginLeft: 10,
+    flexGrow: 1,
+    flexShrink: 1
   },
   item__overview__details__heading: {
     marginBottom: 8,
     fontSize: 18,
-    fontWeight: 700,
+    fontWeight: "700",
   },
   item__overview__details__description: {
     marginBottom: 8,
@@ -46,10 +48,7 @@ const styles = StyleSheet.create({
     padding: 4,
     borderRadius: 4,
     width: 100,
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
+    textAlign: "center"
   },
   item__details: {
     display: "flex",
