@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
+import { NativeRouter } from "react-router-native";
 import Main from "./src/components/Main";
 
 const styles = StyleSheet.create({
@@ -13,9 +14,11 @@ const styles = StyleSheet.create({
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Main />
-    </View>
+    <NativeRouter>
+      <View style={styles.container}>
+        <Main />
+      </View>
+    </NativeRouter>
   );
 };
 
