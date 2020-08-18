@@ -9,9 +9,9 @@ const theme = {
     white: "#FFF"
   },
   fontSizes: {
-    large: "1.5rem",
-    medium: "1.125rem",
-    small: "0.875rem",
+    large: 20,
+    medium: 16,
+    small: 12,
     body: 14,
     subheading: 16,
   },
