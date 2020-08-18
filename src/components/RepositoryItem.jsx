@@ -38,7 +38,8 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   item__overview__details__languages: {
-    color: theme.colors.gray,
+    backgroundColor: theme.colors.primary,
+    color: theme.colors.white,
     borderStyle: "solid",
     borderWidth: 1,
     borderColor: theme.colors.secondary,
