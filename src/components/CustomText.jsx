@@ -15,6 +15,9 @@ const styles = StyleSheet.create({
   colorSecondary: {
     color: theme.colors.secondary,
   },
+  colorWhite: {
+    color: theme.colors.white,
+  },
   fontSizeSmall: {
     fontSize: theme.fontSizes.small,
   },
@@ -37,6 +40,7 @@ const CustomText = ({ color, fontSize, fontWeight, style, ...props }) => {
     styles.text,
     color === "primary" && styles.colorPrimary,
     color === "secondary" && styles.colorSecondary,
+    color === "white" && styles.colorWhite,
     fontSize === "small" && styles.fontSizeSmall,
     fontSize === "medium" && styles.fontSizeMedium,
     fontSize === "large" && styles.fontSizeLarge,
