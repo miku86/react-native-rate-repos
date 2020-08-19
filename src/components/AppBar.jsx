@@ -1,5 +1,10 @@
 import React from "react";
-import { StyleSheet, TouchableWithoutFeedback, View } from "react-native";
+import {
+  ScrollView,
+  StyleSheet,
+  TouchableWithoutFeedback,
+  View
+} from "react-native";
 import { Link } from "react-router-native";
 import theme from "../theme";
 import CustomText from "./CustomText";
@@ -8,19 +13,16 @@ const styles = StyleSheet.create({
   container: {
     padding: 20,
     backgroundColor: theme.colors.backgroundPrimary,
-  },
-  nav: {
     display: "flex",
     flexDirection: "row",
-    justifyContent: "space-evenly"
-  }
+  },
 });
 
 const AppBar = () => {
   return (
     <TouchableWithoutFeedback onPress={() => {}}>
       <View style={styles.container}>
-        <View style={styles.nav}>
+        <ScrollView horizontal>
           <Link to="/">
             <CustomText color="secondary" fontSize="large">
               Repositories
@@ -31,7 +33,7 @@ const AppBar = () => {
               Sign In
             </CustomText>
           </Link>
-        </View>
+        </ScrollView>
       </View>
     </TouchableWithoutFeedback>
   );
